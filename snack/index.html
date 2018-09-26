@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #map {
+            height: 600px;
+            width: 800px;
+            background-color: #CCCCCC;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+
+    </div>
+    <!--错误：要引用js文件-->
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="game.js"></script>
+<script>
+    var map = document.getElementById('map');
+
+    var game = new Game(map);
+
+    game.start();
+</script>
+</body>
+</html>
